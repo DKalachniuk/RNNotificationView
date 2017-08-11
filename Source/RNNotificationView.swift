@@ -114,7 +114,7 @@ open class RNNotificationView: UIToolbar {
     fileprivate var titleLabelFrame: CGRect {
         let y: CGFloat = 3
         if self.imageView.image == nil {
-            let x: CGFloat = 5
+            let x: CGFloat = 10
             return CGRect(x: x, y: y, width: NotificationLayout.width - x, height: NotificationLayout.labelTitleHeight)
         }
         return CGRect(x: textPointX, y: y, width: NotificationLayout.width - textPointX, height: NotificationLayout.labelTitleHeight)
@@ -123,7 +123,7 @@ open class RNNotificationView: UIToolbar {
     fileprivate var messageLabelFrame: CGRect {
         let y: CGFloat = 25
         if self.imageView.image == nil {
-            let x: CGFloat = 5
+            let x: CGFloat = 10
             return CGRect(x: x, y: y, width: NotificationLayout.width - x, height: NotificationLayout.labelMessageHeight)
         }
         return CGRect(x: textPointX, y: y, width: NotificationLayout.width - textPointX, height: NotificationLayout.labelMessageHeight)
@@ -223,7 +223,7 @@ open class RNNotificationView: UIToolbar {
         self.addSubview(self.titleLabel)
         self.addSubview(self.subtitleLabel)
         self.addSubview(self.imageView)
-        self.addSubview(self.dragView)
+        //self.addSubview(self.dragView)
         
         
         // Gestures
